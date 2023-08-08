@@ -1,0 +1,27 @@
+This calculator can do simple arithmetic calculation like addation substraction multiplaication and division.
+This caalculator is made using HTML, CSS, Bootstrap, JavaScript. 
+function explanation :
+function clearDisplay() {
+    document.getElementById("display").value = "";
+}
+this function is used to clear display i.e. output screen after the operation is performed 
+in this function display id is taken and assigned null value after the function is called or button is pressed.
+display function:
+function display(value) {
+    document.getElementById("display").value += value;
+}
+this function is used to display the value of button when pressed the value of button is showed in the output screen.
+The provided line of code is a JavaScript line that appends the value of a variable named value to the current value of an HTML element with the id attribute set to "display". This is commonly used to update the content of an input field or a textarea element in a web page.
+this code can also be written as :
+
+// Get the HTML element with the id "display"
+var displayElement = document.getElementById("display");
+
+// Get the current value of the element
+var currentValue = displayElement.value;
+
+// Add the value of the 'value' variable to the current value
+var newValue = currentValue + value;
+
+// Update the value of the element with the new concatenated value
+displayElement.value = newValue;
